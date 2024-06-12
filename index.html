@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link 
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="close">
+      <a class="fragment" href="google.com">
+        <span><i class="fa fa-times"></i> </span>
+      </a>
+    </div>
+    <div class="container-nav">
+      <a href="#" class="w3-bar w3-bottombar w3-border-right w3-hover-border-green"
+        ><i class="fa fa-home"></i><span>HOME</span></a
+      >
+      <a href="#" class="w3-bar w3-bottombar w3-border-right w3-hover-border-green"
+        ><i class="fa fa-plane"></i> <span>PAGE</span></a
+      >
+      <a href="#" class="w3-bar w3-bottombar w3-border-right w3-hover-border-green"
+        ><i class="fa fa-bell"></i> <span>SAVE</span></a
+      >
+      <a href="#" class="w3-bar w3-bottombar w3-border-right w3-hover-border-green"
+        ><i class="fa fa-key"></i> <span>SHOP</span></a
+      >
+      <a href="#" class="w3-bar w3-bottombar w3-border-right w3-hover-border-green"
+        ><i class="la la-cutlery"></i> <span>INSURE</span></a
+      >
+      <a href="#" class="w3-bar w3-bottombar w3-border-right w3-hover-border-green"
+        ><i class="fa fa-envelope"></i> <span>BORROW</span></a
+      >
+    </div>
+    <div class="w3-row Container d-flex justify-content-center">
+      <div
+        class="slideshow-container fade w3-col container m6"
+        style="float: left"
+      >
+        <div class="Containers">
+          <div class="MessageInfo">1 / 3</div>
+          <img src="./image1.jpg" width="740" height="800" />
+        </div>
+        <div class="Containers">
+          <div class="MessageInfo">2 / 3</div>
+          <img src="./image2.jpg" width="740" height="800" />
+        </div>
+        <div class="Containers">
+          <div class="MessageInfo">3 / 3</div>
+          <img src="./image3.jpg" width="740" height="800" />
+        </div>
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align: center">
+          <span class="dots" onclick="currentSlide(1)"></span>
+          <span class="dots" onclick="currentSlide(2)"></span>
+          <span class="dots" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div class="w3-col Container m6">
+        <h5 class="h5 ml">10 Days Only</h5>
+        <h2 class="h2 ml">Special Offer</h2>
+        <p class="pmr ml">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          reprehenderit nulla? Ex omnis ducimus nesciunt architecto voluptatem
+          sapiente dolore distinctio quisquam voluptatibus officiis vel impedit
+          ratione quia doloribus, aut porro. Lorem ipsum, consectetur adipisng
+          elit. Ratione exercitationem, cupiditate explic tempore
+        </p>
+        <div class="w3-col Container df">
+          <img src="./circle.jpg" height="100" width="100" />
+          <p class="mt p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, reprehenderit nulla? Ex omnis ducimus nesciunt Lorem
+            ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="w3-col Container df">
+          <img src="./circle.jpg" height="100" width="100" />
+          <p class="mt p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, reprehenderit nulla? Ex omnis ducimus nesciunt Lorem
+            ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <hr class="hr" />
+        <form id="" action="index2.html" class="ml">
+          <input
+            class="holder"
+            type="text"
+            id="info"
+            name="phone"
+            placeholder="Enter text here"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+          /><br /><br />
+          <select class="drop">
+            <option value="" disabled selected>Select your option</option>
+            <option value="software testing">software testing</option>
+            <option value="Networking">Networking</option>
+            <option value="Web Development">Web Development</option>
+          </select>
+          <br />
+          <input type="checkbox" name="check" value="yes" /><a
+            href="#"
+            class="chk"
+          >
+            other hot deals</a
+          >
+          <br />
+          <input type="radio" name="agree" value="no" />
+          <a href="#" class="chk"> other hot deals</a>
+          <br />
+          <div class="container btn-div">
+            <button type="submit" class="btn">SUBMIT</button>
+            <button class="btn">KNOW MORE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
